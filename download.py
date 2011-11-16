@@ -49,5 +49,5 @@ def download(url, destination, blocksize=8192):
             sys.stdout.flush()
         
 
-
-download("http://www.ubuntu.com/start-download?distro=desktop&bits=32&release=latest", "tmp")
+if __name__ == "__main__":
+    download("http://www.ubuntu.com/start-download?distro=desktop&bits=32&release=latest", "tmp")
